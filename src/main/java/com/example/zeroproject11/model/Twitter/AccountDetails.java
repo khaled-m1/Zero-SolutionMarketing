@@ -14,7 +14,7 @@ import java.util.Set;
 @Entity
 public class AccountDetails {
     @Id
-    private Long user_id;
+    private Integer user_id;
     private LocalDate creation_date;
     private String username;
     private String name;

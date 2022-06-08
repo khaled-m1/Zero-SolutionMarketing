@@ -1828,3 +1828,35 @@ java.util.NoSuchElementException: No value present
 2022-06-08 14:18:47.164  INFO 2189 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-06-08 14:18:47.169  INFO 2189 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-06-08 14:18:47.177  INFO 2189 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-08 14:43:41.531  INFO 2454 --- [restartedMain] com.example.zeroproject11.Application    : Starting Application using Java 18.0.1.1 on Khaleds-MacBook-Pro.local with PID 2454 (/Users/kma/Desktop/ZeroProject1.1/target/classes started by kma in /Users/kma/Desktop/ZeroProject1.1)
+2022-06-08 14:43:41.533  INFO 2454 --- [restartedMain] com.example.zeroproject11.Application    : No active profile set, falling back to 1 default profile: "default"
+2022-06-08 14:43:41.586  INFO 2454 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-08 14:43:41.587  INFO 2454 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-08 14:43:42.242  INFO 2454 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-08 14:43:42.329  INFO 2454 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
+2022-06-08 14:43:42.876  INFO 2454 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-08 14:43:42.887  INFO 2454 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-08 14:43:42.888  INFO 2454 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-08 14:43:42.957  INFO 2454 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-08 14:43:42.957  INFO 2454 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1369 ms
+2022-06-08 14:43:43.088  INFO 2454 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-08 14:43:43.151  INFO 2454 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-08 14:43:43.307  INFO 2454 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-08 14:43:43.376  INFO 2454 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-08 14:43:43.667  INFO 2454 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-08 14:43:43.680  INFO 2454 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-08 14:43:44.449  INFO 2454 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-08 14:43:44.455  INFO 2454 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-08 14:43:44.749  WARN 2454 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-08 14:43:44.927  INFO 2454 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2177554c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6510d2a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e9207b5, org.springframework.security.web.header.HeaderWriterFilter@66b60488, org.springframework.security.web.authentication.logout.LogoutFilter@6b4018c1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@186d686d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63398af6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@354cb25a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a0f4487, org.springframework.security.web.session.SessionManagementFilter@41263742, org.springframework.security.web.access.ExceptionTranslationFilter@602c30fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fcc9d38]
+2022-06-08 14:43:45.226  INFO 2454 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-08 14:43:45.258  INFO 2454 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-08 14:43:45.270  INFO 2454 --- [restartedMain] com.example.zeroproject11.Application    : Started Application in 4.246 seconds (JVM running for 5.015)
+2022-06-08 14:44:51.580  INFO 2454 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-08 14:44:51.580  INFO 2454 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-08 14:44:51.582  INFO 2454 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-08 14:44:51.629  INFO 2454 --- [http-nio-8080-exec-2] c.e.z.c.AccountDetailsController         : get All Account
+2022-06-08 14:44:51.629  INFO 2454 --- [http-nio-8080-exec-2] c.e.z.service.AccountDetailsService      : get All Account
+2022-06-08 14:45:14.698  INFO 2454 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-08 14:45:14.702  INFO 2454 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-08 14:45:14.709  INFO 2454 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
