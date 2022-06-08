@@ -1778,3 +1778,53 @@ java.util.NoSuchElementException: No value present
 2022-06-08 14:02:16.842  INFO 2003 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-06-08 14:02:16.847  INFO 2003 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-06-08 14:02:16.854  INFO 2003 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-08 14:14:08.888  INFO 2189 --- [restartedMain] com.example.zeroproject11.Application    : Starting Application using Java 18.0.1.1 on Khaleds-MacBook-Pro.local with PID 2189 (/Users/kma/Desktop/ZeroProject1.1/target/classes started by kma in /Users/kma/Desktop/ZeroProject1.1)
+2022-06-08 14:14:08.889  INFO 2189 --- [restartedMain] com.example.zeroproject11.Application    : No active profile set, falling back to 1 default profile: "default"
+2022-06-08 14:14:08.938  INFO 2189 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-08 14:14:08.938  INFO 2189 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-08 14:14:09.583  INFO 2189 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-08 14:14:09.646  INFO 2189 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+2022-06-08 14:14:10.207  INFO 2189 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-08 14:14:10.218  INFO 2189 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-08 14:14:10.219  INFO 2189 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-08 14:14:10.279  INFO 2189 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-08 14:14:10.279  INFO 2189 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1340 ms
+2022-06-08 14:14:10.404  INFO 2189 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-08 14:14:10.454  INFO 2189 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-08 14:14:10.596  INFO 2189 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-08 14:14:10.670  INFO 2189 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-08 14:14:10.942  INFO 2189 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-08 14:14:10.954  INFO 2189 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-08 14:14:11.730  INFO 2189 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-08 14:14:11.735  INFO 2189 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-08 14:14:12.038  WARN 2189 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-08 14:14:12.201  INFO 2189 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3bb1be53, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@186d686d, org.springframework.security.web.context.SecurityContextPersistenceFilter@54d48eab, org.springframework.security.web.header.HeaderWriterFilter@5707f870, org.springframework.security.web.authentication.logout.LogoutFilter@58a2a472, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3da2b4b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@648e0235, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5efea902, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fd2c76e, org.springframework.security.web.session.SessionManagementFilter@6c75a829, org.springframework.security.web.access.ExceptionTranslationFilter@37e7f589, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@450fe233]
+2022-06-08 14:14:12.516  INFO 2189 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-08 14:14:12.546  INFO 2189 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-08 14:14:12.557  INFO 2189 --- [restartedMain] com.example.zeroproject11.Application    : Started Application in 4.112 seconds (JVM running for 4.935)
+2022-06-08 14:15:14.081  INFO 2189 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-08 14:15:14.082  INFO 2189 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-08 14:15:14.083  INFO 2189 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-08 14:15:14.131  INFO 2189 --- [http-nio-8080-exec-1] c.e.z.controller.ProductController       : get All Product
+2022-06-08 14:15:14.131  INFO 2189 --- [http-nio-8080-exec-1] c.e.z.service.ProductService             : get All product
+2022-06-08 14:16:53.757  INFO 2189 --- [http-nio-8080-exec-5] c.e.z.service.ProductService             : add New product
+2022-06-08 14:16:53.758  INFO 2189 --- [http-nio-8080-exec-5] c.e.z.controller.ProductController       : add New product
+2022-06-08 14:16:56.889  INFO 2189 --- [http-nio-8080-exec-6] c.e.z.controller.ProductController       : get All Product
+2022-06-08 14:16:56.889  INFO 2189 --- [http-nio-8080-exec-6] c.e.z.service.ProductService             : get All product
+2022-06-08 14:17:00.079  INFO 2189 --- [http-nio-8080-exec-7] c.e.z.service.ProductService             : add New product
+2022-06-08 14:17:00.079  INFO 2189 --- [http-nio-8080-exec-7] c.e.z.controller.ProductController       : add New product
+2022-06-08 14:17:00.767  INFO 2189 --- [http-nio-8080-exec-8] c.e.z.service.ProductService             : add New product
+2022-06-08 14:17:00.768  INFO 2189 --- [http-nio-8080-exec-8] c.e.z.controller.ProductController       : add New product
+2022-06-08 14:17:02.408  INFO 2189 --- [http-nio-8080-exec-9] c.e.z.controller.ProductController       : get All Product
+2022-06-08 14:17:02.408  INFO 2189 --- [http-nio-8080-exec-9] c.e.z.service.ProductService             : get All product
+2022-06-08 14:17:56.077  INFO 2189 --- [http-nio-8080-exec-10] c.e.z.service.ProductService             : edit product
+2022-06-08 14:17:56.077  INFO 2189 --- [http-nio-8080-exec-10] c.e.z.controller.ProductController       : edit New product
+2022-06-08 14:17:59.306  INFO 2189 --- [http-nio-8080-exec-2] c.e.z.controller.ProductController       : get All Product
+2022-06-08 14:17:59.306  INFO 2189 --- [http-nio-8080-exec-2] c.e.z.service.ProductService             : get All product
+2022-06-08 14:18:29.258  INFO 2189 --- [http-nio-8080-exec-1] c.e.z.controller.ProductController       : delete request 
+2022-06-08 14:18:29.273  INFO 2189 --- [http-nio-8080-exec-1] c.e.z.service.ProductService             : removed product
+2022-06-08 14:18:32.159  INFO 2189 --- [http-nio-8080-exec-3] c.e.z.controller.ProductController       : get All Product
+2022-06-08 14:18:32.159  INFO 2189 --- [http-nio-8080-exec-3] c.e.z.service.ProductService             : get All product
+2022-06-08 14:18:47.164  INFO 2189 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-08 14:18:47.169  INFO 2189 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-08 14:18:47.177  INFO 2189 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
