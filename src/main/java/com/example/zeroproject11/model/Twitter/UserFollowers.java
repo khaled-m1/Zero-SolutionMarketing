@@ -15,8 +15,8 @@ import java.time.LocalDate;
 @Entity
 public class UserFollowers {
     @Id
-    private Long user_id;
-    private LocalDate creation_date;
+    private String user_id;
+    private String creation_date;
     private String username;
     private String name;
 

@@ -1,4 +1,4 @@
-package com.example.zeroproject11.repo;
+package com.example.zeroproject11.repo.Twitter;
 
 import com.example.zeroproject11.model.MyUser;
 import com.example.zeroproject11.model.Twitter.AccountDetails;
@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface AccountDetailsRepository extends JpaRepository<AccountDetails,Integer> {
+public interface AccountDetailsRepository extends JpaRepository<AccountDetails,String> {
 }
