@@ -14,11 +14,11 @@ import java.time.LocalDate;
 @Entity
 public class TweetDetail {
     @Id
-    private Long tweet_id;
-    private LocalDate creation_date;
+    private String tweet_id;
+    private String creation_date;
     private String text;
     private String name;
-    private Long user_id; // FK
+    private String user_id; // FK
     private String language;
     private boolean is_verified;
     private Integer favorite_count;

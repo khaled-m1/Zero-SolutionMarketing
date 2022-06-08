@@ -1921,3 +1921,40 @@ java.util.NoSuchElementException: No value present
 2022-06-08 14:56:45.848  INFO 2661 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-06-08 14:56:45.887  INFO 2661 --- [http-nio-8080-exec-1] c.e.z.c.Twitter.UserFollowersController  : get All FollowersAccount
 2022-06-08 14:56:45.887  INFO 2661 --- [http-nio-8080-exec-1] c.e.z.s.Twitter.UserFollowersService     : get All FollowersAccount
+2022-06-08 14:57:35.637  INFO 2661 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-08 14:57:35.640  INFO 2661 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-08 14:57:35.645  INFO 2661 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-08 15:01:49.652  INFO 2801 --- [restartedMain] com.example.zeroproject11.Application    : Starting Application using Java 18.0.1.1 on Khaleds-MacBook-Pro.local with PID 2801 (/Users/kma/Desktop/ZeroProject1.1/target/classes started by kma in /Users/kma/Desktop/ZeroProject1.1)
+2022-06-08 15:01:49.658  INFO 2801 --- [restartedMain] com.example.zeroproject11.Application    : No active profile set, falling back to 1 default profile: "default"
+2022-06-08 15:01:49.752  INFO 2801 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-08 15:01:49.753  INFO 2801 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-08 15:01:50.428  INFO 2801 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-08 15:01:50.514  INFO 2801 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 7 JPA repository interfaces.
+2022-06-08 15:01:51.056  INFO 2801 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-08 15:01:51.067  INFO 2801 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-08 15:01:51.068  INFO 2801 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-08 15:01:51.136  INFO 2801 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-08 15:01:51.136  INFO 2801 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1381 ms
+2022-06-08 15:01:51.267  INFO 2801 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-08 15:01:51.323  INFO 2801 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-08 15:01:51.476  INFO 2801 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-08 15:01:51.553  INFO 2801 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-08 15:01:51.821  INFO 2801 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-08 15:01:51.833  INFO 2801 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-08 15:01:52.597  INFO 2801 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-08 15:01:52.603  INFO 2801 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-08 15:01:52.918  WARN 2801 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-08 15:01:53.125  INFO 2801 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@329deab6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3099f429, org.springframework.security.web.context.SecurityContextPersistenceFilter@62293ade, org.springframework.security.web.header.HeaderWriterFilter@7849aca1, org.springframework.security.web.authentication.logout.LogoutFilter@547c0500, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@73be609c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43fcd2c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41d3e632, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31d8ef1, org.springframework.security.web.session.SessionManagementFilter@7f479320, org.springframework.security.web.access.ExceptionTranslationFilter@5c275f2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1df1229f]
+2022-06-08 15:01:53.400  INFO 2801 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-08 15:01:53.437  INFO 2801 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-08 15:01:53.448  INFO 2801 --- [restartedMain] com.example.zeroproject11.Application    : Started Application in 4.224 seconds (JVM running for 4.934)
+2022-06-08 15:02:34.060  INFO 2801 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-08 15:02:34.060  INFO 2801 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-08 15:02:34.061  INFO 2801 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-08 15:02:34.105  INFO 2801 --- [http-nio-8080-exec-2] c.e.z.c.Twitter.UserFollowersController  : get All FollowersAccount
+2022-06-08 15:02:34.105  INFO 2801 --- [http-nio-8080-exec-2] c.e.z.s.Twitter.UserFollowersService     : get All FollowersAccount
+2022-06-08 15:03:06.979  INFO 2801 --- [http-nio-8080-exec-3] c.e.z.c.Twitter.TweetDetailController    : get All Tweets
+2022-06-08 15:03:06.980  INFO 2801 --- [http-nio-8080-exec-3] c.e.z.s.Twitter.TweetDetailService       : get All tweet Detail
+2022-06-08 15:03:42.653  INFO 2801 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-08 15:03:42.658  INFO 2801 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-08 15:03:42.664  INFO 2801 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

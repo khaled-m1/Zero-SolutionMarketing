@@ -1,6 +1,8 @@
 package com.example.zeroproject11.controller.Twitter;
 
+import com.example.zeroproject11.model.Twitter.TweetDetail;
 import com.example.zeroproject11.model.Twitter.UserFollowers;
+import com.example.zeroproject11.service.Twitter.TweetDetailService;
 import com.example.zeroproject11.service.Twitter.UserFollowersService;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
@@ -12,15 +14,15 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/followers")
+@RequestMapping("api/v1/tweet")
 @AllArgsConstructor
-public class UserFollowersController {
-    private final UserFollowersService userFollowersService;
-    private final Logger log = LoggerFactory.getLogger(UserFollowersController.class);
-    // get all FollowersAccount
-    @GetMapping("/get-followers")
-    public List<UserFollowers> getFollowers(){
-        log.info("get All FollowersAccount");
-        return userFollowersService.getFollowers();
+public class TweetDetailController {
+    private final TweetDetailService tweetDetailService;
+    private final Logger log = LoggerFactory.getLogger(TweetDetailController.class);
+    // get all tweet Detail
+    @GetMapping("/get-tweet")
+    public List<TweetDetail> getTweet(){
+        log.info("get All Tweets");
+        return tweetDetailService.getTweet();
     }
 }
