@@ -32,7 +32,13 @@ public class SecurtyConfig extends WebSecurityConfigurerAdapter {
 //                .antMatchers("api/v1/user/admin").hasAuthority("ADMIN")
 //                .antMatchers("api/v1/user/logged").hasAnyAuthority("ADMIN","CUSTOMER")
 //                .anyRequest().authenticated()
+//
 //                .and()
 //                .httpBasic();
+
+        http.csrf().disable()
+                .authorizeRequests()
+                .anyRequest().permitAll()
+                .and().httpBasic();
     }
 }

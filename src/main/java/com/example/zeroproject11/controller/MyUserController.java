@@ -26,12 +26,12 @@ public class MyUserController {
         return myUserService.getUsers();
     }
     // post users
-    @PostMapping("/add-user")
-    public ResponseEntity addUsers(@RequestBody @Valid MyUser myUser){
-        myUserService.addUsers(myUser);
-        log.info("add New User");
-        return ResponseEntity.status(201).body(new ApiResponce("Accept request :)",201));
-    }
+//    @PostMapping("/add-user")
+//    public ResponseEntity addUsers(@RequestBody @Valid MyUser myUser){
+//        myUserService.addUsers(myUser);
+//        log.info("add New User");
+//        return ResponseEntity.status(201).body(new ApiResponce("Accept request :)",201));
+//    }
     // edit users
     @PutMapping("/edit-user/{id}")
     public ResponseEntity editUsers(@PathVariable Long id,

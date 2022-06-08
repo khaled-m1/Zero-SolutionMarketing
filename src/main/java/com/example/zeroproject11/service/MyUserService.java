@@ -21,10 +21,10 @@ public class MyUserService {
         return myUserRepository.findAll();
     }
     // post users
-    public void addUsers(MyUser myUser) {
-        myUserRepository.save(myUser);
-        log.info("add New User");
-    }
+//    public void addUsers(MyUser myUser) {
+//        myUserRepository.save(myUser);
+//        log.info("add New User");
+//    }
     // edit Users
     public boolean editUser(Long id, MyUser myUser) {
         MyUser editUser = myUserRepository.findById(id).get();
