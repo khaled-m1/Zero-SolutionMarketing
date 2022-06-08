@@ -15,14 +15,12 @@ public class MyUserInfo {
     @Id
     private Long user_detailsId;
     @NotEmpty(message = "Your Card Id must be a not Empty :)")
-//    @Positive(message = "Your Card Id must be a number :)")
     private String cardId;
     @NotEmpty(message = "Your Card Name must be a not Empty  :)")
     private String cardName;
     @NotEmpty(message = "Your Card Date must be a not Empty  :)")
     private String cardDate;
     @NotEmpty(message = "Your Card Number must be a not Empty  :)")
-//    @Positive(message = "Your Card Number must be a number  :)")
     private String cardNumber;
 
     @OneToOne(cascade = CascadeType.ALL)

@@ -13,7 +13,7 @@ import java.util.Set;
 @Entity
 public class Cart {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long cartId;
     private Long userId;
     private Long productId;

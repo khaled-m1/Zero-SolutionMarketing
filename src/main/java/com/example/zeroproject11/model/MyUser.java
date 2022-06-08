@@ -18,7 +18,7 @@ import java.util.Collections;
 @Entity
 public class MyUser implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
     private Long userId;
     @NotEmpty(message = "username must be a not Empty :)")

@@ -14,7 +14,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
     @NotEmpty(message = "your name must be not null")
     private String name;
