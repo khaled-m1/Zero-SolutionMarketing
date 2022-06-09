@@ -40,7 +40,6 @@ public class MyUser implements UserDetails {
     private MyUserInfo myUserInfo;
     // Class cart
     @ManyToOne
-    @JsonIgnore
     private Cart cart;
 
     // Securty

@@ -21,11 +21,12 @@ public class Cart {
     private Integer productPrice;
 
 
-
     // class user
     @OneToMany(mappedBy = "cart",cascade = CascadeType.ALL)
+    @JsonIgnore
     private Set<MyUser> myUser;
     // class product
     @OneToMany(mappedBy = "cart",cascade = CascadeType.ALL)
+
     private Set<Product> product;
 }
