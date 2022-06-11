@@ -23,6 +23,7 @@ public class MyUserInfo {
     @NotEmpty(message = "Your Card Number must be a not Empty  :)")
     private String cardNumber;
 
+
     @OneToOne(cascade = CascadeType.ALL)
     @MapsId
     @JoinColumn(name = "userId")

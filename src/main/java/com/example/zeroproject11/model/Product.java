@@ -28,7 +28,7 @@ public class Product {
     @JsonIgnore
     private Cart cart;
     // Class AccountDetails
-    @OneToOne(mappedBy = "product",cascade = CascadeType.ALL)
-    @PrimaryKeyJoinColumn
-    private AccountDetails accountDetails;
+//    @OneToOne(mappedBy = "product",cascade = CascadeType.ALL)
+//    @PrimaryKeyJoinColumn
+//    private AccountDetails accountDetails;
 }

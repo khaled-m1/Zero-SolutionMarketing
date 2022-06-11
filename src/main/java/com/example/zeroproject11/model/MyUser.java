@@ -34,6 +34,8 @@ public class MyUser implements UserDetails {
     @Pattern(regexp = "(ADMIN|CUSTOMER)",message = "Select type user ADMIN or CUSTOMER")
     private String role;
 
+    private Integer balance;
+
     // User Details
     @OneToOne(mappedBy = "myUser",cascade = CascadeType.ALL)
     @PrimaryKeyJoinColumn

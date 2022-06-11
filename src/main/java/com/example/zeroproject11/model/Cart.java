@@ -27,6 +27,6 @@ public class Cart {
     private Set<MyUser> myUser;
     // class product
     @OneToMany(mappedBy = "cart",cascade = CascadeType.ALL)
-
+    @JsonIgnore
     private Set<Product> product;
 }

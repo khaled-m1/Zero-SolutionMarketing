@@ -1,6 +1,7 @@
 package com.example.zeroproject11.advice;
 
 import com.example.zeroproject11.dto.ApiResponce;
+import com.example.zeroproject11.exsptions.InvalidDataAccessApiUsageException;
 import com.example.zeroproject11.exsptions.InvalidExceptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,12 @@ public class ControllerAdviseHandler {
     @ExceptionHandler(value = InvalidExceptions.class)
     public ResponseEntity<ApiResponce> handleException(InvalidExceptions idExceptions){
         String message = idExceptions.getMessage();
+        log.info(message);
+        return ResponseEntity.status(400).body(new ApiResponce(message,400));
+    }
+    @ExceptionHandler(value = InvalidDataAccessApiUsageException.class)
+    public ResponseEntity<ApiResponce> handleException(InvalidDataAccessApiUsageException dataApi){
+        String message = dataApi.getMessage();
         log.info(message);
         return ResponseEntity.status(400).body(new ApiResponce(message,400));
     }

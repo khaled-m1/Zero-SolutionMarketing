@@ -15,16 +15,11 @@ import java.time.LocalDate;
 @Entity
 public class UserFollowers {
     @Id
-    private String user_id;
-    private String creation_date;
+    private String followersId;
     private String username;
+    private String created_at;
     private String name;
 
-    private String location;
-    private String profile_pic_url;
-    private String description;
-    private Integer number_of_tweets;
-    private boolean bot;
 
     // Class AccountDetails
     @ManyToOne

@@ -9,23 +9,16 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 @AllArgsConstructor @NoArgsConstructor @Data
 @Entity
 public class TweetDetail {
     @Id
-    private String tweet_id;
-    private String creation_date;
+    private String tweetId;
     private String text;
-    private String name;
-    private String user_id; // FK
-    private String language;
-    private boolean is_verified;
-    private Integer favorite_count;
-    private Integer retweet_count;
-    private Integer reply_count;
-    private Integer quote_count;
-    private boolean retweet;
+    private String created_at;
+    private String author_id;
 
     // Class AccountDetails
     @ManyToOne
