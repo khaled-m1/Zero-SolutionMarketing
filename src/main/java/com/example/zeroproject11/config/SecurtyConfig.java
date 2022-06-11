@@ -24,20 +24,17 @@ public class SecurtyConfig extends WebSecurityConfigurerAdapter {
     }
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        // must be enabled this because save from attacks
-//        http.csrf().disable()
-//                .authorizeRequests()
-//                .antMatchers("api/v1/user/register/**").permitAll()
-//                .antMatchers("api/v1/user/admin").hasAuthority("ADMIN")
-//                .antMatchers("api/v1/user/logged").hasAnyAuthority("ADMIN","CUSTOMER")
-//                .anyRequest().authenticated()
-//
-//                .and()
-//                .httpBasic();
-
         http.csrf().disable()
                 .authorizeRequests()
-                .anyRequest().permitAll()
+                .antMatchers("/api/v1/user/register/**").permitAll()
+                .antMatchers("/api/v1/user/admin").hasAuthority("ADMIN")
+                .antMatchers("/api/v1/user/logged/**").hasAnyAuthority("ADMIN","CUSTOMER")
+                .anyRequest().authenticated()
                 .and().httpBasic();
+
+//        http.csrf().disable()
+//                .authorizeRequests()
+//                .anyRequest().permitAll()
+//                .and().httpBasic();
     }
 }

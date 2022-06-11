@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -55,10 +56,14 @@ public class MyUserController {
     }
     // register
     @PostMapping("/register")
-    public MyUser registerUser(@RequestBody @Valid MyUser myUser){
+    public ResponseEntity<ApiResponce> registerUser(@RequestBody @Valid MyUser myUser, Errors errors){
+        if (errors.hasErrors()){
+            String message = errors.getFieldError().getDefaultMessage();
+           return ResponseEntity.status(400).body(new ApiResponce(message,400));
+        }
         myUserService.registerUser(myUser);
         log.info("Register Users");
-        return myUserService.registerUser(myUser);
+        return ResponseEntity.status(201).body(new ApiResponce("Success request :)",201));
     }
     @GetMapping("/logged")
     public ResponseEntity<String> logged(){
