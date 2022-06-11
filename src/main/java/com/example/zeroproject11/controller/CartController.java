@@ -1,15 +1,11 @@
 package com.example.zeroproject11.controller;
 
 import com.example.zeroproject11.dto.ApiResponce;
-import com.example.zeroproject11.exsptions.InvalidExceptions;
 import com.example.zeroproject11.model.Cart;
-import com.example.zeroproject11.model.MyUser;
 import com.example.zeroproject11.service.CartService;
-import com.example.zeroproject11.service.MyUserService;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -51,7 +47,4 @@ public class CartController {
         cartService.removeCart(index);
         return ResponseEntity.status(200).body(" cart removed :)");
     }
-
-
-
 }

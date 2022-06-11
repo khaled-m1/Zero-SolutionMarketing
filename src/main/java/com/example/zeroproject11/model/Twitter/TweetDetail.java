@@ -4,12 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import java.time.LocalDate;
-import java.util.ArrayList;
 
 @AllArgsConstructor @NoArgsConstructor @Data
 @Entity

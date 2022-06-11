@@ -20,7 +20,4 @@ public class AccountDetailsService {
         log.info("get All Account");
         return accountDetailsRepository.findAll();
     }
-
-
-
 }

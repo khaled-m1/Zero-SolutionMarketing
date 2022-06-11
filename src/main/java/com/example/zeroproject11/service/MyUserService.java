@@ -4,7 +4,6 @@ import com.example.zeroproject11.model.Cart;
 import com.example.zeroproject11.model.MyUser;
 import com.example.zeroproject11.model.Product;
 import com.example.zeroproject11.repo.CartRepository;
-import com.example.zeroproject11.repo.MyUserInfoRepository;
 import com.example.zeroproject11.repo.MyUserRepository;
 import com.example.zeroproject11.repo.ProductRepository;
 import lombok.AllArgsConstructor;
@@ -21,7 +20,6 @@ import java.util.List;
 @AllArgsConstructor
 public class MyUserService {
     private final MyUserRepository myUserRepository;
-    private final MyUserInfoRepository myUserInfoRepository;
     private final ProductRepository productRepository;
     private final CartRepository cartRepository;
 
@@ -59,6 +57,7 @@ public class MyUserService {
         String hashedPassword = new BCryptPasswordEncoder().encode(myUser.getPassword());
         myUser.setPassword(hashedPassword);
         myUserRepository.save(myUser);
+        log.info("register User");
         return myUser;
     }
     // pay product
@@ -74,6 +73,7 @@ public class MyUserService {
         Integer oldBalance=myUser.getBalance();
         myUser.setBalance(oldBalance-product.getPrice());
         myUserRepository.save(myUser);
+        log.info("pay product 1 in service");
         return 1;
     }
     // payProduct with cart
@@ -84,18 +84,17 @@ public class MyUserService {
         if (product == null || myUser == null || cart == null){
             return -1;
         }
-        if (myUser.getBalance()<product.getPrice()){
+        if (myUser.getBalance() < product.getPrice()){
             return 0;
         }
         Integer oldBalance=myUser.getBalance();
         myUser.setBalance(oldBalance-product.getPrice());
         myUserRepository.save(myUser);
+        log.info("pay product 2 in service");
         return 1;
     }
     public List<MyUser> getUserByRole(String role) {
+        log.info("get User By Role");
         return myUserRepository.findByRole(role);
     }
-
-
-
 }

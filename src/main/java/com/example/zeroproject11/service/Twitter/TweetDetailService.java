@@ -1,9 +1,7 @@
 package com.example.zeroproject11.service.Twitter;
 
 import com.example.zeroproject11.model.Twitter.TweetDetail;
-import com.example.zeroproject11.model.Twitter.UserFollowers;
 import com.example.zeroproject11.repo.Twitter.TweetDetailRepository;
-import com.example.zeroproject11.repo.Twitter.UserFollowersRepository;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

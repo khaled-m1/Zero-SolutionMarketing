@@ -2,18 +2,13 @@ package com.example.zeroproject11.controller;
 
 import com.example.zeroproject11.dto.ApiResponce;
 import com.example.zeroproject11.dto.MyUserInfoDTO;
-import com.example.zeroproject11.exsptions.InvalidExceptions;
-import com.example.zeroproject11.model.MyUser;
 import com.example.zeroproject11.model.MyUserInfo;
 import com.example.zeroproject11.service.MyUserInfoService;
-import com.example.zeroproject11.service.MyUserService;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -50,5 +45,4 @@ public class MyUserInfoController {
         myUserInfoService.removeUserInfo(index);
         return ResponseEntity.status(200).body("User removed :)");
     }
-
 }

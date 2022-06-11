@@ -22,7 +22,6 @@ public class SecurtyConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(myUserDetailsService).passwordEncoder(new BCryptPasswordEncoder());
 
     }
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         // must be enabled this because save from attacks

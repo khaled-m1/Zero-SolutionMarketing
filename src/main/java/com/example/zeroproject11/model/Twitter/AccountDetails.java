@@ -25,6 +25,7 @@ public class AccountDetails {
 //    @JoinColumn(name = "productId")
 //    @JsonIgnore
 //    private Product product;
+
     // Class TweetDetail
     @OneToMany(mappedBy = "accountDetails",cascade = CascadeType.ALL)
     private Set<TweetDetail> tweetDetail;

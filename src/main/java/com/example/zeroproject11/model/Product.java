@@ -1,6 +1,5 @@
 package com.example.zeroproject11.model;
 
-import com.example.zeroproject11.model.Twitter.AccountDetails;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;

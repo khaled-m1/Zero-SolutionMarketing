@@ -1,15 +1,12 @@
 package com.example.zeroproject11.service;
 
-import com.example.zeroproject11.exsptions.InvalidDataAccessApiUsageException;
+
 import com.example.zeroproject11.exsptions.InvalidExceptions;
-import com.example.zeroproject11.model.MyUser;
 import com.example.zeroproject11.model.Product;
-import com.example.zeroproject11.repo.MyUserRepository;
 import com.example.zeroproject11.repo.ProductRepository;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

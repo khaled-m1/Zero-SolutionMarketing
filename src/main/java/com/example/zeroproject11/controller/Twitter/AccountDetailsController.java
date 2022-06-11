@@ -21,11 +21,4 @@ public class AccountDetailsController {
         log.info("get All Account");
         return accountDetailsService.getAccount();
     }
-//    @GetMapping("/account")
-//    public Object getTweeqAccount(){
-//        log.info("get All Account");
-//        return accountDetailsService.getTweeqAccount();
-//    }
-
-
 }

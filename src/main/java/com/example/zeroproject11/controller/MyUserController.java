@@ -1,9 +1,6 @@
 package com.example.zeroproject11.controller;
-
 import com.example.zeroproject11.dto.ApiResponce;
-import com.example.zeroproject11.exsptions.InvalidDataAccessApiUsageException;
 import com.example.zeroproject11.exsptions.InvalidExceptions;
-import com.example.zeroproject11.model.Cart;
 import com.example.zeroproject11.model.MyUser;
 import com.example.zeroproject11.service.MyUserInfoService;
 import com.example.zeroproject11.service.MyUserService;
@@ -60,23 +57,28 @@ public class MyUserController {
     @PostMapping("/register")
     public MyUser registerUser(@RequestBody @Valid MyUser myUser){
         myUserService.registerUser(myUser);
+        log.info("Register Users");
         return myUserService.registerUser(myUser);
     }
     @GetMapping("/logged")
     public ResponseEntity<String> logged(){
+        log.info("Logged Users");
         return ResponseEntity.status(200).body("hello Users");
     }
     // Customer page
     @GetMapping("/customer")
     public ResponseEntity<ApiResponce> getCustomer(){
+        log.info("customer page");
         return ResponseEntity.status(200).body(new ApiResponce("Hello User",200));
     }
     @GetMapping("/admin")
     public ResponseEntity<ApiResponce> getAdmin(){
+        log.info("admin page");
         return ResponseEntity.status(200).body(new ApiResponce("Hello Admin",200));
     }
     @GetMapping("/role/{role}")
     public ResponseEntity<List<MyUser>> getUserByRole(@PathVariable String role){
+        log.info("get role");
         return ResponseEntity.status(200).body(myUserService.getUserByRole(role));
     }
     // payProduct Direct
@@ -85,6 +87,7 @@ public class MyUserController {
                                         @PathVariable Long productId){
 
         Integer payStatus=myUserService.payProduct(userId,productId);
+        log.info("payProduct Direct");
         switch (payStatus){
             case -1:
                 throw new InvalidExceptions("Invalid request");
@@ -103,6 +106,7 @@ public class MyUserController {
                                         @PathVariable Long cartId){
 
         Integer payCase=myUserService.payProductCart(userId,productId,cartId);
+        log.info("payProduct with cart");
         switch (payCase){
             case -1:
                 throw new InvalidExceptions("Invalid request");
