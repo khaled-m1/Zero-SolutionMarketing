@@ -13,16 +13,9 @@
 - in this project you can do it :)
 
 ### User flow
+![flowtchartpng](https://user-images.githubusercontent.com/71227623/173221121-57e66cc4-4509-4ab2-91fc-b3e5478b767f.png)
 
-``` flow
-st=>start: start 
-op=>operation: pay product
-cond=>condition: Successful payment?
-e=>operation: Enjoy :)
-st->op->cond
-cond(yes)->e
-cond(no)->op
-```
+
 ### Sequence Diagram
                     
 ```seq
