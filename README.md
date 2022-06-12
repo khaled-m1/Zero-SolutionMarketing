@@ -18,13 +18,8 @@
 
 ### Sequence Diagram
                     
-```seq
-User->Product: Select product
-Product->>Cart: request
-Cart->Product: View request
-User->>Cart: pyament
-User-->Item: view Account Twitter
-```
+![UML Zero project - UML ZERO](https://user-images.githubusercontent.com/71227623/173221554-bcb037ca-b291-43e0-a06e-d2b957b514c1.jpeg)
+
 
 #### regester　
 
